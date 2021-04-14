@@ -1,0 +1,44 @@
+h1 {
+	text-align: center;
+	color: rgba(175, 47, 47, 0.15);
+	font-size: 100px;
+	margin: 20px 0 20px 0;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+}
+
+body {
+	background-color: #f5f5f5;
+}
+
+.container {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.input_todo {
+	font-size: 1.5em;
+	width: calc(100% - 104px);
+	padding: 15px 50px 15px 50px;
+	border: 0;
+	box-shadow: 0 0 7px -1px #888;
+	color: #555;
+}
+
+.input_todo:focus {
+	outline: none;
+}
+
+.input_todo::placeholder {
+	font-style: italic;
+	color: #ddd;
+}
+
+footer {
+	margin-top: 100px;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;
+	color: #999;
+}
