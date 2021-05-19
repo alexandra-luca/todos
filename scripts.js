@@ -15,6 +15,8 @@ function submitField() {
 	displayItems(items);
 
 	document.getElementById("input_todo").value = "";
+
+	return false;
 }
 
 function displayItems(items) {
@@ -39,9 +41,9 @@ function displayItems(items) {
 			<div class="bar">
 				<span class="bar-left">${items.filter((item) => item.isChecked == false).length} items left</span>
 				<span class="bar-buttons">
-					<span class="bar-button" onclick="setAll()">All</span>
-					<span class="bar-button" onclick="setActive()">Active</span>
-					<span class="bar-button" onclick="setCompleted()">Completed</span>
+					<span class="bar-button ${selected == 0 ? 'selected' : ''}" onclick="setAll()">All</span>
+					<span class="bar-button ${selected == 1 ? 'selected' : ''}" onclick="setActive()">Active</span>
+					<span class="bar-button ${selected == 2 ? 'selected' : ''}" onclick="setCompleted()">Completed</span>
 				</span>
 				<span class="bar-clear"><span class="span-clear" onclick="clearCompleted()">Clear completed</span></span>
 			</div>`;

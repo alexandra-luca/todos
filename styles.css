@@ -124,3 +124,7 @@ footer {
 .span-clear {
 	cursor: pointer;
 }
+
+.selected {
+	border: 1px solid #AAA;
+}
