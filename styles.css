@@ -70,6 +70,8 @@ footer {
 
 	color: #3e911a;
 	text-align: center;
+
+	cursor: pointer;
 }
 
 .todo-delete {
@@ -82,4 +84,43 @@ footer {
 
 	color: #ed4c2f;
 	font-size: 20px;
+
+	cursor: pointer;
+}
+
+.bar {
+	background-color: white;
+	color: #555;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+	border-top: 1px solid #DDD;
+}
+
+.bar-left {
+	display: inline-block;
+	width: calc(33% - 20px);
+	padding-left: 20px;
+}
+
+.bar-buttons {
+	width: 33%;
+	display: inline-block;
+}
+
+.bar-button {
+	margin-left: 10px;
+	margin-right: 10px;
+
+	cursor: pointer;
+}
+
+.bar-clear {
+	width: calc(33% - 20px);
+	text-align: right;
+	display: inline-block;
+}
+
+.span-clear {
+	cursor: pointer;
 }
